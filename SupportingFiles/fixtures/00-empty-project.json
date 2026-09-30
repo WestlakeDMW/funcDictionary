@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "project_empty",
+    "name": "Empty Fixture",
+    "schema_version": "1.0",
+    "created_at": "2026-08-28T00:00:00Z",
+    "updated_at": "2026-08-28T00:00:00Z",
+    "archived": false
+  },
+  "definitions": [],
+  "clusters": [],
+  "agent_context": {
+    "definition_id": "",
+    "canonical_name": "",
+    "current_symbol": "",
+    "current_func": "",
+    "code_locator": {
+      "symbol": "",
+      "symbol_type": "",
+      "func": "",
+      "signature": "",
+      "owner": "",
+      "file": "",
+      "module": ""
+    },
+    "visual_locator": {
+      "screen": "",
+      "container": "",
+      "region": "",
+      "hierarchy": []
+    },
+    "functional_locator": {
+      "domain": "",
+      "role": "",
+      "trigger": ""
+    },
+    "human_priority": null,
+    "protection": null,
+    "relevant_relations": []
+  },
+  "revision": 0,
+  "generated_at": "2026-08-28T00:00:00Z"
+}

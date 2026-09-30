@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>AI thinking ring</title>
+  <g id="layer-ai-thinking-ring" inkscape:groupmode="layer" inkscape:label="04 · AI Thinking Ring">
+    <g fill="#A8DCC5" transform="translate(38 -188)" aria-hidden="true">
+      <circle cx="801.67" cy="341.60" r="7" opacity="0.180" id="thinking-dot-01" />
+      <circle cx="828.65" cy="355.35" r="7" opacity="0.262" id="thinking-dot-02" />
+      <circle cx="842.40" cy="382.33" r="7" opacity="0.344" id="thinking-dot-03" />
+      <circle cx="837.66" cy="412.25" r="7" opacity="0.426" id="thinking-dot-04" />
+      <circle cx="816.25" cy="433.66" r="7" opacity="0.508" id="thinking-dot-05" />
+      <circle cx="786.33" cy="438.40" r="7" opacity="0.590" id="thinking-dot-06" />
+      <circle cx="759.35" cy="424.65" r="7" opacity="0.672" id="thinking-dot-07" />
+      <circle cx="745.60" cy="397.67" r="7" opacity="0.754" id="thinking-dot-08" />
+      <circle cx="750.34" cy="367.75" r="7" opacity="0.836" id="thinking-dot-09" />
+      <circle cx="771.75" cy="346.34" r="7" opacity="0.918" id="thinking-dot-10" />
+    </g>
+  </g>
+</svg>

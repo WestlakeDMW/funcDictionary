@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23504" systemVersion="27.0" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Project" representedClassName="funcDictionary.CDProjectRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="project" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="Definition" representedClassName="funcDictionary.CDDefinitionRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="definition" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="CodeLocator" representedClassName="funcDictionary.CDCodeLocatorRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="code_locator" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="VisualLocator" representedClassName="funcDictionary.CDVisualLocatorRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="visual_locator" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="FunctionalLocator" representedClassName="funcDictionary.CDFunctionalLocatorRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="functional_locator" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="FuzzyTerm" representedClassName="funcDictionary.CDFuzzyTermRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="fuzzy_term" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="Relation" representedClassName="funcDictionary.CDRelationRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="relation" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="Reference" representedClassName="funcDictionary.CDReferenceRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="reference" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="ImplementationEvent" representedClassName="funcDictionary.CDImplementationEventRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="implementation_event" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="Snapshot" representedClassName="funcDictionary.CDSnapshotRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="snapshot" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="file" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="width" optional="NO" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="height" optional="NO" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sizeBytes" optional="NO" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="perceptualHash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="revision" optional="NO" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="milestone" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+    </entity>
+    <entity name="Cluster" representedClassName="funcDictionary.CDClusterRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="cluster" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="ClusterMembership" representedClassName="funcDictionary.CDClusterMembershipRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="cluster_membership" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="Proposal" representedClassName="funcDictionary.CDProposalRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="proposal" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="ChangeRequest" representedClassName="funcDictionary.CDChangeRequestRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="change_request" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="HumanPriority" representedClassName="funcDictionary.CDHumanPriorityRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="human_priority" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="ActiveContext" representedClassName="funcDictionary.CDActiveContextRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="active_context" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="FieldRevision" representedClassName="funcDictionary.CDFieldRevisionRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="field_revision" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="ConflictRecord" representedClassName="funcDictionary.CDConflictEntityRecord" syncable="YES">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="conflict" syncable="YES"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <entity name="ProjectAccess" representedClassName="funcDictionary.CDProjectAccessRecord" syncable="NO">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="NO"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="NO"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="project_access" syncable="NO"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="NO"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="NO"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="NO"/>
+    </entity>
+    <entity name="ExportState" representedClassName="funcDictionary.CDExportStateRecord" syncable="NO">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="NO"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="NO"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="export_state" syncable="NO"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="NO"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="NO"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="NO"/>
+    </entity>
+    <entity name="DeviceState" representedClassName="funcDictionary.CDDeviceStateRecord" syncable="NO">
+        <attribute name="stableID" optional="NO" attributeType="String" defaultValueString="" syncable="NO"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="NO"/>
+        <attribute name="recordKind" optional="NO" attributeType="String" defaultValueString="device_state" syncable="NO"/>
+        <attribute name="schemaVersion" optional="NO" attributeType="String" defaultValueString="1.0" syncable="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="NO"/>
+        <attribute name="softDeleted" optional="NO" attributeType="Boolean" defaultValueString="NO" syncable="NO"/>
+        <attribute name="payload" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="NO"/>
+    </entity>
+    <elements>
+        <element name="Project" positionX="-180" positionY="-90" width="128" height="45"/>
+        <element name="Definition" positionX="0" positionY="-90" width="128" height="45"/>
+        <element name="Proposal" positionX="180" positionY="-90" width="128" height="45"/>
+        <element name="ChangeRequest" positionX="360" positionY="-90" width="128" height="45"/>
+    </elements>
+    <configuration name="CloudStore" usedWithCloudKit="YES">
+        <memberEntity name="Project"/>
+        <memberEntity name="Definition"/>
+        <memberEntity name="CodeLocator"/>
+        <memberEntity name="VisualLocator"/>
+        <memberEntity name="FunctionalLocator"/>
+        <memberEntity name="FuzzyTerm"/>
+        <memberEntity name="Relation"/>
+        <memberEntity name="Reference"/>
+        <memberEntity name="ImplementationEvent"/>
+        <memberEntity name="Snapshot"/>
+        <memberEntity name="Cluster"/>
+        <memberEntity name="ClusterMembership"/>
+        <memberEntity name="Proposal"/>
+        <memberEntity name="ChangeRequest"/>
+        <memberEntity name="HumanPriority"/>
+        <memberEntity name="ActiveContext"/>
+        <memberEntity name="FieldRevision"/>
+        <memberEntity name="ConflictRecord"/>
+    </configuration>
+    <configuration name="LocalStore">
+        <memberEntity name="ProjectAccess"/>
+        <memberEntity name="ExportState"/>
+        <memberEntity name="DeviceState"/>
+    </configuration>
+</model>

@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "project_demo",
+    "name": "Demo Project",
+    "schema_version": "1.0",
+    "created_at": "2026-08-28T00:00:00Z",
+    "updated_at": "2026-08-28T00:05:00Z",
+    "archived": false
+  },
+  "definitions": [
+    {
+      "id": "def_sync_button",
+      "project_id": "project_demo",
+      "schema_version": "1.0",
+      "identity": {
+        "canonical_name": "PrimarySyncControl",
+        "display_name": "同步按钮",
+        "kind": "component"
+      },
+      "function": {
+        "domain": "synchronization",
+        "purpose": "执行当前项目的同步操作",
+        "actions": ["start_sync"]
+      },
+      "code_locator": {
+        "symbol": "SyncButton",
+        "symbol_type": "view",
+        "func": "startSync()",
+        "signature": "func startSync()",
+        "owner": "DictionaryViewController",
+        "file": "Features/Dictionary/DictionaryViewController.swift",
+        "module": "funcDictionary",
+        "line_hint": 168
+      },
+      "visual_locator": {
+        "screen": "DictionaryScreen",
+        "container": "navigation_toolbar",
+        "region": "top_trailing",
+        "hierarchy": ["DictionaryScreen", "NavigationToolbar", "SyncButton"]
+      },
+      "functional_locator": {
+        "domain": "synchronization",
+        "role": "项目同步入口",
+        "trigger": "user_tap"
+      },
+      "fuzzy_terms": [
+        {
+          "id": "term_sync_button_user",
+          "text": "右上角那个同步的东西",
+          "source": "user",
+          "weight": 1.0,
+          "usage_count": 4
+        }
+      ],
+      "relations": [],
+      "references": [
+        { "id": "ref_sync_prd", "kind": "prd", "value": "PRD 35" }
+      ],
+      "snapshots": [
+        {
+          "id": "snapshot_sync_button_1",
+          "file": "snapshots/snapshot_sync_button_1.jpg",
+          "width": 720,
+          "height": 480,
+          "size_bytes": 52431,
+          "perceptual_hash": "phash_demo_sync_01",
+          "revision": 1,
+          "milestone": true
+        }
+      ],
+      "implementation_history": [
+        {
+          "revision": 1,
+          "change_type": "created",
+          "changes": {},
+          "code_impact": 0.5,
+          "semantic_impact": 0.7,
+          "milestone": true,
+          "occurred_at": "2026-08-28T00:04:00Z"
+        }
+      ],
+      "human_priority": {
+        "level": "important",
+        "label": "核心入口",
+        "note": "同步入口需要保持可定位"
+      },
+      "review_status": "unreviewed",
+      "lifecycle": {
+        "state": "Active",
+        "activity": 0.55,
+        "centrality": 0.2,
+        "stability": 0.7,
+        "maturity": 0.6,
+        "matched_rules": ["recent implementation activity"],
+        "calculated_at": "2026-08-28T00:05:00Z",
+        "algorithm_version": "1.0"
+      },
+      "active_context": false,
+      "lineage": [],
+      "created_at": "2026-08-28T00:04:00Z",
+      "updated_at": "2026-08-28T00:05:00Z"
+    }
+  ],
+  "clusters": [],
+  "agent_context": {
+    "definition_id": "def_sync_button",
+    "canonical_name": "PrimarySyncControl",
+    "current_symbol": "SyncButton",
+    "current_func": "startSync()",
+    "code_locator": {
+      "symbol": "SyncButton",
+      "symbol_type": "view",
+      "func": "startSync()",
+      "signature": "func startSync()",
+      "owner": "DictionaryViewController",
+      "file": "Features/Dictionary/DictionaryViewController.swift",
+      "module": "funcDictionary",
+      "line_hint": 168
+    },
+    "visual_locator": {
+      "screen": "DictionaryScreen",
+      "container": "navigation_toolbar",
+      "region": "top_trailing",
+      "hierarchy": ["DictionaryScreen", "NavigationToolbar", "SyncButton"]
+    },
+    "functional_locator": {
+      "domain": "synchronization",
+      "role": "项目同步入口",
+      "trigger": "user_tap"
+    },
+    "human_priority": {
+      "level": "important",
+      "label": "核心入口",
+      "note": "同步入口需要保持可定位"
+    },
+    "protection": null,
+    "relevant_relations": []
+  },
+  "revision": 1,
+  "generated_at": "2026-08-28T00:05:00Z"
+}

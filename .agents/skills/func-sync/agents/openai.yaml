@@ -1,0 +1,7 @@
+interface:
+  display_name: "func-sync"
+  short_description: "Keep the project function dictionary in sync with code changes"
+  default_prompt: "Read the current project dictionary and submit a validated Delta for affected functions and direct call sites."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "delta_id": "delta_split_001",
+  "project_id": "project_demo",
+  "base_revision": 2,
+  "target_revision": 3,
+  "created_at": "2026-08-28T00:15:00Z",
+  "changed_fields": ["def_sync_button.review_status", "def_sync_button.lineage"],
+  "definitions_created": [],
+  "definitions_evolved": [],
+  "fuzzy_terms_added": [],
+  "relations_changed": [],
+  "references_changed": [],
+  "snapshots_changed": [],
+  "proposals": [
+    {
+      "id": "proposal_split_sync_001",
+      "project_id": "project_demo",
+      "action": "split",
+      "definition_ids": ["def_sync_button"],
+      "status": "pending",
+      "summary": "将同步入口与同步状态展示拆成两个可独立修改的 Definition",
+      "payload": {
+        "new_definition_ids": "def_sync_action,def_sync_status",
+        "lineage": "from=def_sync_button; relation=split_into"
+      },
+      "created_at": "2026-08-28T00:15:00Z"
+    }
+  ],
+  "change_requests": [],
+  "conflict_records": []
+}

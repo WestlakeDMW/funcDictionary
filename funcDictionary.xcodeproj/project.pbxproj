@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20000000000000000000041 /* GlobalSearchEngineTests.swift in macOS Tests */ = {isa = PBXBuildFile; fileRef = B10000000000000000000039 /* GlobalSearchEngineTests.swift */; };
+		A20000000000000000000035 /* funcDictionary.icon in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000035; };
+		A10000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* AppDelegate.swift */; };
+		A10000000000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* SceneDelegate.swift */; };
+		A10000000000000000000003 /* AppCompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* AppCompositionRoot.swift */; };
+		A10000000000000000000004 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* EmptyStateView.swift */; };
+		A10000000000000000000005 /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* ProjectListViewController.swift */; };
+		A10000000000000000000006 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* DictionaryViewController.swift */; };
+		A10000000000000000000007 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* SearchViewController.swift */; };
+		A10000000000000000000008 /* ProposalReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* ProposalReviewViewController.swift */; };
+		A10000000000000000000009 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* SettingsViewController.swift */; };
+		A10000000000000000000010 /* funcDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000010 /* funcDictionaryTests.swift */; };
+		A10000000000000000000011 /* funcDictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* funcDictionaryUITests.swift */; };
+		A10000000000000000000012 /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* DomainModels.swift */; };
+		A10000000000000000000013 /* ProjectScopedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* ProjectScopedRepository.swift */; };
+		A10000000000000000000014 /* ManagedRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* ManagedRecords.swift */; };
+		A10000000000000000000015 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* PersistenceController.swift */; };
+		A10000000000000000000016 /* CoreDataProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020 /* CoreDataProjectRepository.swift */; };
+		A10000000000000000000017 /* funcDictionary.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021 /* funcDictionary.xcdatamodeld */; };
+		A10000000000000000000018 /* PersistenceAndDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022 /* PersistenceAndDomainTests.swift */; };
+		A10000000000000000000019 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023 /* AppStore.swift */; };
+		A10000000000000000000020 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024 /* SearchEngine.swift */; };
+		A10000000000000000000021 /* SearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000025 /* SearchEngineTests.swift */; };
+		A10000000000000000000022 /* DictionaryEngines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* DictionaryEngines.swift */; };
+		A10000000000000000000023 /* DictionaryEnginesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000027 /* DictionaryEnginesTests.swift */; };
+		A10000000000000000000024 /* JSONCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000028 /* JSONCodec.swift */; };
+		A10000000000000000000025 /* FileExchangeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000029 /* FileExchangeStore.swift */; };
+		A10000000000000000000026 /* SnapshotPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000030 /* SnapshotPipeline.swift */; };
+		A10000000000000000000027 /* JSONAndExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000031 /* JSONAndExchangeTests.swift */; };
+		A10000000000000000000028 /* SnapshotPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000032 /* SnapshotPipelineTests.swift */; };
+		A10000000000000000000029 /* CloudSyncCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000033 /* CloudSyncCoordinator.swift */; };
+		A10000000000000000000030 /* ConflictResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000034 /* ConflictResolution.swift */; };
+		A10000000000000000000031 /* CloudSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000035 /* CloudSyncTests.swift */; };
+		A10000000000000000000032 /* SnapshotAssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000036 /* SnapshotAssetStore.swift */; };
+		A10000000000000000000033 /* SnapshotAssetStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000037 /* SnapshotAssetStoreTests.swift */; };
+		A20000000000000000000001 /* funcDictionaryMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* funcDictionaryMacApp.swift */; };
+		A20000000000000000000002 /* MacAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* MacAppModel.swift */; };
+		A20000000000000000000003 /* MacRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* MacRootView.swift */; };
+		A20000000000000000000004 /* MacProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* MacProjectView.swift */; };
+		A20000000000000000000005 /* MacHarnessCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* MacHarnessCenterView.swift */; };
+		A20000000000000000000006 /* MacSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000006 /* MacSettingsView.swift */; };
+		A20000000000000000000007 /* HarnessConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000007 /* HarnessConnector.swift */; };
+		A20000000000000000000008 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023 /* AppStore.swift */; };
+		A20000000000000000000009 /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* DomainModels.swift */; };
+		A20000000000000000000010 /* ProjectScopedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* ProjectScopedRepository.swift */; };
+		A20000000000000000000011 /* ManagedRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* ManagedRecords.swift */; };
+		A20000000000000000000012 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* PersistenceController.swift */; };
+		A20000000000000000000013 /* CoreDataProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020 /* CoreDataProjectRepository.swift */; };
+		A20000000000000000000014 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024 /* SearchEngine.swift */; };
+		A20000000000000000000015 /* JSONCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000028 /* JSONCodec.swift */; };
+		A20000000000000000000016 /* FileExchangeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000029 /* FileExchangeStore.swift */; };
+		A20000000000000000000017 /* CloudSyncCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000033 /* CloudSyncCoordinator.swift */; };
+		A20000000000000000000018 /* SnapshotAssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000036 /* SnapshotAssetStore.swift */; };
+		A20000000000000000000019 /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000008 /* Info.plist */; };
+		A20000000000000000000020 /* funcDictionary.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021 /* funcDictionary.xcdatamodeld */; };
+		A20000000000000000000021 /* HarnessConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000009 /* HarnessConnectorTests.swift */; };
+		A20000000000000000000022 /* DictionaryEngines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* DictionaryEngines.swift */; };
+		A20000000000000000000023 /* ConflictResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000034 /* ConflictResolution.swift */; };
+		A20000000000000000000024 /* SnapshotPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000030 /* SnapshotPipeline.swift */; };
+		A20000000000000000000025 /* MacCoreRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000012 /* MacCoreRegressionTests.swift */; };
+		A20000000000000000000026 /* DeltaDirectoryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000013 /* DeltaDirectoryWatcher.swift */; };
+		A20000000000000000000027 /* DeltaAutoSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000014 /* DeltaAutoSyncTests.swift */; };
+		A20000000000000000000028 = {isa = PBXBuildFile; fileRef = B20000000000000000000028; };
+		A20000000000000000000029 = {isa = PBXBuildFile; fileRef = B20000000000000000000029; };
+		A20000000000000000000030 = {isa = PBXBuildFile; fileRef = B20000000000000000000030; };
+		A20000000000000000000031 = {isa = PBXBuildFile; fileRef = B20000000000000000000031; };
+		A20000000000000000000032 = {isa = PBXBuildFile; fileRef = B20000000000000000000032; };
+		A20000000000000000000033 = {isa = PBXBuildFile; fileRef = B20000000000000000000033; };
+		A20000000000000000000034 = {isa = PBXBuildFile; fileRef = B20000000000000000000034; };
+		A10000000000000000000034 /* GlobalSearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000038 /* GlobalSearchEngine.swift */; };
+		A10000000000000000000035 /* GlobalSearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000039 /* GlobalSearchEngineTests.swift */; };
+		A20000000000000000000036 /* GlobalSearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000038 /* GlobalSearchEngine.swift */; };
+		A20000000000000000000037 /* GlobalSearchHotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000015 /* GlobalSearchHotKey.swift */; };
+		A20000000000000000000038 /* GlobalSearchPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000016 /* GlobalSearchPanelController.swift */; };
+		A20000000000000000000039 /* GlobalSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000017 /* GlobalSearchViewModel.swift */; };
+		A20000000000000000000040 /* MacGlobalSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000018 /* MacGlobalSearchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20000000000000000000035 /* funcDictionary.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = funcDictionaryMac/funcDictionary.icon; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000000 /* funcDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funcDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* AppCompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCompositionRoot.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* ProjectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* ProposalReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalReviewViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000009 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000010 /* funcDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcDictionaryTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000011 /* funcDictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcDictionaryUITests.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10000000000000000000013 /* funcDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = funcDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000014 /* funcDictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = funcDictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000015 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B10000000000000000000016 /* DomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModels.swift; sourceTree = "<group>"; };
+		B10000000000000000000017 /* ProjectScopedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectScopedRepository.swift; sourceTree = "<group>"; };
+		B10000000000000000000018 /* ManagedRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedRecords.swift; sourceTree = "<group>"; };
+		B10000000000000000000019 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B10000000000000000000020 /* CoreDataProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectRepository.swift; sourceTree = "<group>"; };
+		B10000000000000000000021 /* funcDictionary.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = funcDictionary.xcdatamodeld; sourceTree = "<group>"; };
+		B10000000000000000000022 /* PersistenceAndDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceAndDomainTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000023 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000024 /* SearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
+		B10000000000000000000025 /* SearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000026 /* DictionaryEngines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEngines.swift; sourceTree = "<group>"; };
+		B10000000000000000000027 /* DictionaryEnginesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEnginesTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000028 /* JSONCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodec.swift; sourceTree = "<group>"; };
+		B10000000000000000000029 /* FileExchangeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExchangeStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000030 /* SnapshotPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotPipeline.swift; sourceTree = "<group>"; };
+		B10000000000000000000031 /* JSONAndExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAndExchangeTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000032 /* SnapshotPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotPipelineTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000033 /* CloudSyncCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncCoordinator.swift; sourceTree = "<group>"; };
+		B10000000000000000000034 /* ConflictResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictResolution.swift; sourceTree = "<group>"; };
+		B10000000000000000000035 /* CloudSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000036 /* SnapshotAssetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotAssetStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000037 /* SnapshotAssetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotAssetStoreTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000000 /* funcDictionaryMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funcDictionaryMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000001 /* funcDictionaryMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcDictionaryMacApp.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* MacAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000003 /* MacRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRootView.swift; sourceTree = "<group>"; };
+		B20000000000000000000004 /* MacProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacProjectView.swift; sourceTree = "<group>"; };
+		B20000000000000000000005 /* MacHarnessCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHarnessCenterView.swift; sourceTree = "<group>"; };
+		B20000000000000000000006 /* MacSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSettingsView.swift; sourceTree = "<group>"; };
+		B20000000000000000000007 /* HarnessConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarnessConnector.swift; sourceTree = "<group>"; };
+		B20000000000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20000000000000000000009 /* HarnessConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarnessConnectorTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20000000000000000000011 /* funcDictionaryMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = funcDictionaryMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000012 /* MacCoreRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCoreRegressionTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000013 /* DeltaDirectoryWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaDirectoryWatcher.swift; sourceTree = "<group>"; };
+		B20000000000000000000014 /* DeltaAutoSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaAutoSyncTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000028 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "funcDictionaryMac/Harness/AgentWorkspace.swift"; sourceTree = SOURCE_ROOT; };
+		B20000000000000000000029 = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "script/funcdictionary.py"; sourceTree = SOURCE_ROOT; };
+		B20000000000000000000030 = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ".agents/skills/func-sync/scripts/validate_json.py"; sourceTree = SOURCE_ROOT; };
+		B20000000000000000000031 = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ".agents/skills/func-sync/references/protocol.md"; sourceTree = SOURCE_ROOT; };
+		B20000000000000000000032 = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "SupportingFiles/agent-workflow.md"; sourceTree = SOURCE_ROOT; };
+		B20000000000000000000033 = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SupportingFiles/schema/dictionary-delta.schema.json"; sourceTree = SOURCE_ROOT; };
+		B20000000000000000000034 = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SupportingFiles/schema/dictionary-snapshot.schema.json"; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000038 /* GlobalSearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchEngine.swift; sourceTree = "<group>"; };
+		B10000000000000000000039 /* GlobalSearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchEngineTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000015 /* GlobalSearchHotKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchHotKey.swift; sourceTree = "<group>"; };
+		B20000000000000000000016 /* GlobalSearchPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchPanelController.swift; sourceTree = "<group>"; };
+		B20000000000000000000017 /* GlobalSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000018 /* MacGlobalSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacGlobalSearchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000000000000000000001 /* App Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C10000000000000000000002 /* Unit Test Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C10000000000000000000003 /* UI Test Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C20000000000000000000012 /* macOS Unit Test Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10000000000000000000001 /* Main Group */ = {isa = PBXGroup; children = (B20000000000000000000035, B20000000000000000000034, B20000000000000000000033, B20000000000000000000032, B20000000000000000000031, B20000000000000000000030, B20000000000000000000029, B20000000000000000000028, D10000000000000000000002, D20000000000000000000001, D10000000000000000000008, D10000000000000000000009, D10000000000000000000010, D10000000000000000000011, D10000000000000000000012, D20000000000000000000006, B10000000000000000000015); sourceTree = "<group>"; };
+		D10000000000000000000002 /* funcDictionary */ = {isa = PBXGroup; children = (D10000000000000000000003, D10000000000000000000004, D10000000000000000000005, D10000000000000000000006, D10000000000000000000013, D10000000000000000000014, D10000000000000000000017); path = funcDictionary; sourceTree = "<group>"; };
+		D10000000000000000000003 /* App */ = {isa = PBXGroup; children = (B10000000000000000000001, B10000000000000000000002, B10000000000000000000003, B10000000000000000000023); path = App; sourceTree = "<group>"; };
+		D10000000000000000000004 /* SharedUI */ = {isa = PBXGroup; children = (B10000000000000000000004); path = SharedUI; sourceTree = "<group>"; };
+		D10000000000000000000005 /* Features */ = {isa = PBXGroup; children = (B10000000000000000000005, B10000000000000000000006, B10000000000000000000007, B10000000000000000000008, B10000000000000000000009); path = Features; sourceTree = "<group>"; };
+		D10000000000000000000006 /* SupportingFiles */ = {isa = PBXGroup; children = (B10000000000000000000012); path = SupportingFiles; sourceTree = "<group>"; };
+		D10000000000000000000008 /* Products */ = {isa = PBXGroup; children = (B10000000000000000000000, B10000000000000000000013, B10000000000000000000014, B20000000000000000000011); name = Products; sourceTree = "<group>"; };
+		D10000000000000000000009 /* Docs */ = {isa = PBXGroup; children = (); path = Docs; sourceTree = "<group>"; };
+		D10000000000000000000010 /* SupportingFiles */ = {isa = PBXGroup; children = (); path = SupportingFiles; sourceTree = "<group>"; };
+		D10000000000000000000011 /* funcDictionaryTests */ = {isa = PBXGroup; children = (B10000000000000000000010, B10000000000000000000022, B10000000000000000000025, B10000000000000000000027, B10000000000000000000031, B10000000000000000000032, B10000000000000000000035, B10000000000000000000037, B10000000000000000000039); path = funcDictionaryTests; sourceTree = "<group>"; };
+		D10000000000000000000012 /* funcDictionaryUITests */ = {isa = PBXGroup; children = (B10000000000000000000011); path = funcDictionaryUITests; sourceTree = "<group>"; };
+		D10000000000000000000013 /* Domain */ = {isa = PBXGroup; children = (D10000000000000000000018, D10000000000000000000019, D10000000000000000000020, D10000000000000000000021, D10000000000000000000022, D10000000000000000000023); path = Domain; sourceTree = "<group>"; };
+		D10000000000000000000014 /* Data */ = {isa = PBXGroup; children = (D10000000000000000000015, D10000000000000000000016, D10000000000000000000024); path = Data; sourceTree = "<group>"; };
+		D10000000000000000000015 /* CoreData */ = {isa = PBXGroup; children = (B10000000000000000000018, B10000000000000000000019, B10000000000000000000036); path = CoreData; sourceTree = "<group>"; };
+		D10000000000000000000016 /* Repositories */ = {isa = PBXGroup; children = (B10000000000000000000020); path = Repositories; sourceTree = "<group>"; };
+		D10000000000000000000017 /* Resources */ = {isa = PBXGroup; children = (B10000000000000000000021); path = Resources; sourceTree = "<group>"; };
+		D10000000000000000000018 /* Models */ = {isa = PBXGroup; children = (B10000000000000000000016); path = Models; sourceTree = "<group>"; };
+		D10000000000000000000019 /* Repositories */ = {isa = PBXGroup; children = (B10000000000000000000017); path = Repositories; sourceTree = "<group>"; };
+		D10000000000000000000020 /* Search */ = {isa = PBXGroup; children = (B10000000000000000000024, B10000000000000000000038); path = Search; sourceTree = "<group>"; };
+		D10000000000000000000021 /* Engines */ = {isa = PBXGroup; children = (B10000000000000000000026, B10000000000000000000034); path = Engines; sourceTree = "<group>"; };
+		D10000000000000000000022 /* ImportExport */ = {isa = PBXGroup; children = (B10000000000000000000028, B10000000000000000000029); path = ImportExport; sourceTree = "<group>"; };
+		D10000000000000000000023 /* SnapshotPipeline */ = {isa = PBXGroup; children = (B10000000000000000000030); path = SnapshotPipeline; sourceTree = "<group>"; };
+		D10000000000000000000024 /* CloudKit */ = {isa = PBXGroup; children = (B10000000000000000000033); path = CloudKit; sourceTree = "<group>"; };
+		D20000000000000000000001 /* funcDictionaryMac */ = {isa = PBXGroup; children = (D20000000000000000000002, D20000000000000000000003, D20000000000000000000008, D20000000000000000000004, D20000000000000000000007, D20000000000000000000005); path = funcDictionaryMac; sourceTree = "<group>"; };
+		D20000000000000000000002 /* App */ = {isa = PBXGroup; children = (B20000000000000000000001, B20000000000000000000002); path = App; sourceTree = "<group>"; };
+		D20000000000000000000003 /* Harness */ = {isa = PBXGroup; children = (B20000000000000000000007); path = Harness; sourceTree = "<group>"; };
+		D20000000000000000000004 /* Views */ = {isa = PBXGroup; children = (B20000000000000000000003, B20000000000000000000004, B20000000000000000000005, B20000000000000000000006); path = Views; sourceTree = "<group>"; };
+		D20000000000000000000005 /* SupportingFiles */ = {isa = PBXGroup; children = (B20000000000000000000008); path = SupportingFiles; sourceTree = "<group>"; };
+		D20000000000000000000006 /* funcDictionaryMacTests */ = {isa = PBXGroup; children = (B20000000000000000000009, B20000000000000000000012, B20000000000000000000014, B20000000000000000000010); path = funcDictionaryMacTests; sourceTree = "<group>"; };
+		D20000000000000000000007 /* Sync */ = {isa = PBXGroup; children = (B20000000000000000000013); path = Sync; sourceTree = "<group>"; };
+		D20000000000000000000008 /* GlobalSearch */ = {isa = PBXGroup; children = (B20000000000000000000015, B20000000000000000000016, B20000000000000000000017, B20000000000000000000018); path = GlobalSearch; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000000000000000000001 /* funcDictionary */ = {isa = PBXNativeTarget; buildConfigurationList = F10000000000000000000001; buildPhases = (C10000000000000000000004, C10000000000000000000001, C10000000000000000000005); buildRules = (); dependencies = (); name = funcDictionary; productName = funcDictionary; productReference = B10000000000000000000000; productType = "com.apple.product-type.application"; };
+		E10000000000000000000002 /* funcDictionaryTests */ = {isa = PBXNativeTarget; buildConfigurationList = F10000000000000000000002; buildPhases = (C10000000000000000000006, C10000000000000000000002, C10000000000000000000007); buildRules = (); dependencies = (E10000000000000000000004); name = funcDictionaryTests; productName = funcDictionaryTests; productReference = B10000000000000000000013; productType = "com.apple.product-type.bundle.unit-test"; };
+		E10000000000000000000003 /* funcDictionaryUITests */ = {isa = PBXNativeTarget; buildConfigurationList = F10000000000000000000003; buildPhases = (C10000000000000000000008, C10000000000000000000003, C10000000000000000000009); buildRules = (); dependencies = (E10000000000000000000005); name = funcDictionaryUITests; productName = funcDictionaryUITests; productReference = B10000000000000000000014; productType = "com.apple.product-type.bundle.ui-testing"; };
+		E20000000000000000000001 /* funcDictionaryMac */ = {isa = PBXNativeTarget; buildConfigurationList = F20000000000000000000001; buildPhases = (C20000000000000000000010, C20000000000000000000011); buildRules = (); dependencies = (); name = funcDictionaryMac; productName = funcDictionaryMac; productReference = B20000000000000000000000; productType = "com.apple.product-type.application"; };
+		E20000000000000000000002 /* funcDictionaryMacTests */ = {isa = PBXNativeTarget; buildConfigurationList = F20000000000000000000006; buildPhases = (C20000000000000000000013, C20000000000000000000012, C20000000000000000000014); buildRules = (); dependencies = (E20000000000000000000003); name = funcDictionaryMacTests; productName = funcDictionaryMacTests; productReference = B20000000000000000000011; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10000000000000000000000 /* Project object */ = {isa = PBXProject; attributes = { LastUpgradeCheck = 2700; ORGANIZATIONNAME = funcDictionary; TargetAttributes = { E10000000000000000000001 = { CreatedOnToolsVersion = 27.0; }; E10000000000000000000002 = { CreatedOnToolsVersion = 27.0; TestTargetID = E10000000000000000000001; }; E10000000000000000000003 = { CreatedOnToolsVersion = 27.0; TestTargetID = E10000000000000000000001; }; E20000000000000000000001 = { CreatedOnToolsVersion = 27.0; }; E20000000000000000000002 = { CreatedOnToolsVersion = 27.0; TestTargetID = E20000000000000000000001; }; }; }; buildConfigurationList = F10000000000000000000000; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = D10000000000000000000001; productRefGroup = D10000000000000000000008; projectDirPath = ""; projectRoot = ""; targets = (E10000000000000000000001, E10000000000000000000002, E10000000000000000000003, E20000000000000000000001, E20000000000000000000002); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10000000000000000000005 /* App Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000017); runOnlyForDeploymentPostprocessing = 0; };
+		C10000000000000000000007 /* Unit Test Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C10000000000000000000009 /* UI Test Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C20000000000000000000011 /* macOS App Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000035, A20000000000000000000034, A20000000000000000000033, A20000000000000000000032, A20000000000000000000031, A20000000000000000000030, A20000000000000000000029, A20000000000000000000020); runOnlyForDeploymentPostprocessing = 0; };
+		C20000000000000000000014 /* macOS Unit Test Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10000000000000000000004 /* App Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000003, A10000000000000000000004, A10000000000000000000005, A10000000000000000000006, A10000000000000000000007, A10000000000000000000008, A10000000000000000000009, A10000000000000000000012, A10000000000000000000013, A10000000000000000000014, A10000000000000000000015, A10000000000000000000016, A10000000000000000000019, A10000000000000000000020, A10000000000000000000022, A10000000000000000000024, A10000000000000000000025, A10000000000000000000026, A10000000000000000000029, A10000000000000000000030, A10000000000000000000032, A10000000000000000000034); runOnlyForDeploymentPostprocessing = 0; };
+		C10000000000000000000006 /* Unit Test Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000010, A10000000000000000000018, A10000000000000000000021, A10000000000000000000023, A10000000000000000000027, A10000000000000000000028, A10000000000000000000031, A10000000000000000000033, A10000000000000000000035); runOnlyForDeploymentPostprocessing = 0; };
+		C10000000000000000000008 /* UI Test Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000011); runOnlyForDeploymentPostprocessing = 0; };
+		C20000000000000000000010 /* macOS App Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000028, A20000000000000000000001, A20000000000000000000002, A20000000000000000000003, A20000000000000000000004, A20000000000000000000005, A20000000000000000000006, A20000000000000000000007, A20000000000000000000008, A20000000000000000000009, A20000000000000000000010, A20000000000000000000011, A20000000000000000000012, A20000000000000000000013, A20000000000000000000014, A20000000000000000000015, A20000000000000000000016, A20000000000000000000017, A20000000000000000000018, A20000000000000000000022, A20000000000000000000023, A20000000000000000000024, A20000000000000000000026, A20000000000000000000036, A20000000000000000000037, A20000000000000000000038, A20000000000000000000039, A20000000000000000000040); runOnlyForDeploymentPostprocessing = 0; };
+		C20000000000000000000013 /* macOS Unit Test Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000041, A20000000000000000000021, A20000000000000000000025, A20000000000000000000027); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E10000000000000000000004 = {isa = PBXTargetDependency; target = E10000000000000000000001; targetProxy = E10000000000000000000006; };
+		E10000000000000000000005 = {isa = PBXTargetDependency; target = E10000000000000000000001; targetProxy = E10000000000000000000007; };
+		E20000000000000000000003 = {isa = PBXTargetDependency; target = E20000000000000000000001; targetProxy = E20000000000000000000008; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		E10000000000000000000006 = {isa = PBXContainerItemProxy; containerPortal = E10000000000000000000000; proxyType = 1; remoteGlobalIDString = E10000000000000000000001; remoteInfo = funcDictionary; };
+		E10000000000000000000007 = {isa = PBXContainerItemProxy; containerPortal = E10000000000000000000000; proxyType = 1; remoteGlobalIDString = E10000000000000000000001; remoteInfo = funcDictionary; };
+		E20000000000000000000008 = {isa = PBXContainerItemProxy; containerPortal = E10000000000000000000000; proxyType = 1; remoteGlobalIDString = E20000000000000000000001; remoteInfo = funcDictionaryMac; };
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000010 /* Project Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SWIFT_VERSION = 6.0; }; name = Debug; };
+		F10000000000000000000011 /* Project Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; }; name = Release; };
+		F10000000000000000000012 /* App Debug */ = {isa = XCBuildConfiguration; buildSettings = { CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; ENABLE_TESTABILITY = YES; INFOPLIST_FILE = funcDictionary/SupportingFiles/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.0; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SUPPORTS_MACCATALYST = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		F10000000000000000000013 /* App Release */ = {isa = XCBuildConfiguration; buildSettings = { CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionary/SupportingFiles/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.0; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SUPPORTS_MACCATALYST = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		F10000000000000000000014 /* Unit Debug */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionaryTests/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SUPPORTS_MACCATALYST = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/funcDictionary.app/funcDictionary"; }; name = Debug; };
+		F10000000000000000000015 /* Unit Release */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionaryTests/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SUPPORTS_MACCATALYST = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/funcDictionary.app/funcDictionary"; }; name = Release; };
+		F10000000000000000000016 /* UI Debug */ = {isa = XCBuildConfiguration; buildSettings = { CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionaryUITests/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = funcDictionary; }; name = Debug; };
+		F10000000000000000000017 /* UI Release */ = {isa = XCBuildConfiguration; buildSettings = { CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionaryUITests/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = funcDictionary; }; name = Release; };
+		F20000000000000000000002 /* macOS Debug */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = funcDictionary; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; ENABLE_TESTABILITY = YES; INFOPLIST_FILE = funcDictionaryMac/SupportingFiles/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.mac; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = macosx; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_VERSION = 6.0; }; name = Debug; };
+		F20000000000000000000003 /* macOS Release */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = funcDictionary; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionaryMac/SupportingFiles/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.mac; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = macosx; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; }; name = Release; };
+		F20000000000000000000004 /* macOS Unit Test Debug */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; ENABLE_TESTABILITY = YES; INFOPLIST_FILE = funcDictionaryMacTests/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.mac.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/funcDictionaryMac.app/Contents/MacOS/funcDictionaryMac"; }; name = Debug; };
+		F20000000000000000000005 /* macOS Unit Test Release */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; INFOPLIST_FILE = funcDictionaryMacTests/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.funcDictionary.mac.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/funcDictionaryMac.app/Contents/MacOS/funcDictionaryMac"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10000000000000000000000 /* Project Configurations */ = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000010, F10000000000000000000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F10000000000000000000001 /* App Configurations */ = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000012, F10000000000000000000013); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F10000000000000000000002 /* Unit Configurations */ = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000014, F10000000000000000000015); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F10000000000000000000003 /* UI Configurations */ = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000016, F10000000000000000000017); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F20000000000000000000001 /* macOS App Configurations */ = {isa = XCConfigurationList; buildConfigurations = (F20000000000000000000002, F20000000000000000000003); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F20000000000000000000006 /* macOS Unit Test Configurations */ = {isa = XCConfigurationList; buildConfigurations = (F20000000000000000000004, F20000000000000000000005); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = E10000000000000000000000;
+}

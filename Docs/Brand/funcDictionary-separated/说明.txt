@@ -1,0 +1,6 @@
+四个 SVG 均为 1024 × 1024，保留原始坐标。
+01-background.svg：背景
+02-func.svg：func 文字，透明背景，矢量轮廓
+03-Dictionary.svg：Dictionary 文字，透明背景，矢量轮廓
+04-ai-thinking-ring.svg：AI 思考圆环，透明背景
+按相同画布原点叠加即可还原完整图标。

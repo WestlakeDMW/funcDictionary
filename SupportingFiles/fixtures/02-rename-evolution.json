@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "delta_id": "delta_rename_001",
+  "project_id": "project_demo",
+  "base_revision": 1,
+  "target_revision": 2,
+  "created_at": "2026-08-28T00:10:00Z",
+  "changed_fields": ["def_sync_button.code_locator.symbol", "def_sync_button.code_locator.func", "def_sync_button.code_locator.file"],
+  "definitions_created": [],
+  "definitions_evolved": [
+    {
+      "definition_id": "def_sync_button",
+      "change_type": "implementation_change",
+      "changes": {
+        "symbol": "SyncButton -> PrimarySyncButton",
+        "func": "startSync() -> performSync()",
+        "file": "Features/Dictionary/DictionaryViewController.swift -> Features/Sync/PrimarySyncButton.swift"
+      },
+      "code_impact": 0.43,
+      "semantic_impact": 0.81,
+      "milestone": true
+    }
+  ],
+  "fuzzy_terms_added": [],
+  "relations_changed": [],
+  "references_changed": [],
+  "snapshots_changed": [],
+  "proposals": [],
+  "change_requests": [],
+  "conflict_records": []
+}

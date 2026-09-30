@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://funcdictionary.local/schema/dictionary-snapshot-1.0.json",
+  "title": "funcDictionary Dictionary Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "definitions", "clusters", "agent_context", "revision", "generated_at"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "project": { "$ref": "#/$defs/project" },
+    "definitions": { "type": "array", "items": { "$ref": "#/$defs/definition" } },
+    "clusters": { "type": "array", "items": { "$ref": "#/$defs/cluster" } },
+    "agent_context": { "$ref": "#/$defs/agent_context" },
+    "revision": { "type": "integer", "minimum": 0 },
+    "generated_at": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "schema_version", "created_at", "updated_at", "archived"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^project_[a-zA-Z0-9_-]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "schema_version": { "const": "1.0" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "archived": { "type": "boolean" }
+      }
+    },
+    "definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "project_id", "schema_version", "identity", "function", "code_locator", "visual_locator", "functional_locator", "fuzzy_terms", "relations", "references", "snapshots", "implementation_history", "review_status", "active_context", "lineage", "created_at", "updated_at"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^def_[a-zA-Z0-9_-]+$" },
+        "project_id": { "type": "string", "pattern": "^project_[a-zA-Z0-9_-]+$" },
+        "schema_version": { "const": "1.0" },
+        "identity": { "$ref": "#/$defs/identity" },
+        "function": { "$ref": "#/$defs/function" },
+        "code_locator": { "$ref": "#/$defs/code_locator" },
+        "visual_locator": { "$ref": "#/$defs/visual_locator" },
+        "functional_locator": { "$ref": "#/$defs/functional_locator" },
+        "fuzzy_terms": { "type": "array", "items": { "$ref": "#/$defs/fuzzy_term" } },
+        "relations": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
+        "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
+        "snapshots": { "type": "array", "items": { "$ref": "#/$defs/snapshot" } },
+        "implementation_history": { "type": "array", "items": { "$ref": "#/$defs/implementation_event" } },
+        "human_priority": { "oneOf": [{ "$ref": "#/$defs/human_priority" }, { "type": "null" }] },
+        "review_status": { "enum": ["unreviewed", "approved", "deprecated", "split", "merged", "archived"] },
+        "lifecycle": { "oneOf": [{ "$ref": "#/$defs/lifecycle" }, { "type": "null" }] },
+        "change_heat": { "oneOf": [{ "$ref": "#/$defs/change_heat" }, { "type": "null" }] },
+        "active_context": { "type": "boolean" },
+        "lineage": { "type": "array", "items": { "type": "string" } },
+        "ui_metrics": {
+          "type": "array",
+          "description": "元素相关的 UI 实测数值（px/pt）",
+          "items": {
+            "type": "object",
+            "required": ["property", "value"],
+            "properties": {
+              "property": { "type": "string" },
+              "value": { "type": "string" },
+              "source": { "type": "string" }
+            }
+          }
+        },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_name", "display_name", "kind"],
+      "properties": {
+        "canonical_name": { "type": "string", "minLength": 1 },
+        "display_name": { "type": "string" },
+        "kind": { "type": "string", "minLength": 1 }
+      }
+    },
+    "function": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "purpose", "actions"],
+      "properties": {
+        "domain": { "type": "string" },
+        "purpose": { "type": "string" },
+        "actions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "code_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol", "symbol_type", "func", "signature", "owner", "file", "module"],
+      "properties": {
+        "symbol": { "type": "string" },
+        "symbol_type": { "type": "string" },
+        "func": { "type": "string" },
+        "signature": { "type": "string" },
+        "owner": { "type": "string" },
+        "file": { "type": "string" },
+        "module": { "type": "string" },
+        "line_hint": { "type": "integer", "minimum": 1 },
+        "func_comment": { "type": "string", "description": "人类维护的 func 短注释（一句话说明当前行为）" }
+      }
+    },
+    "visual_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["screen", "container", "region", "hierarchy"],
+      "properties": {
+        "screen": { "type": "string" },
+        "container": { "type": "string" },
+        "region": { "type": "string" },
+        "hierarchy": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "functional_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "role", "trigger"],
+      "properties": {
+        "domain": { "type": "string" },
+        "role": { "type": "string" },
+        "trigger": { "type": "string" }
+      }
+    },
+    "fuzzy_term": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "source", "weight", "usage_count"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "source": { "enum": ["user", "human_added", "ai_generated"] },
+        "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "usage_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [{
+        "if": { "properties": { "type": { "const": "calls" } }, "required": ["type"] },
+        "then": { "properties": { "metadata": {
+          "required": ["file", "line", "evidence"],
+          "properties": {
+            "file": { "type": "string", "minLength": 1, "not": { "pattern": "^/" } },
+            "line": { "type": "string", "pattern": "^[1-9][0-9]*$" },
+            "evidence": { "type": "string", "minLength": 1 }
+          }
+        } } }
+      }],
+      "required": ["id", "type", "source_definition_id", "target_definition_id", "metadata"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "enum": ["contains", "calls", "uses", "depends_on", "triggers", "displays", "owns", "produces", "reads", "writes"] },
+        "source_definition_id": { "type": "string", "pattern": "^def_[a-zA-Z0-9_-]+$" },
+        "target_definition_id": { "type": "string", "pattern": "^def_[a-zA-Z0-9_-]+$" },
+        "metadata": { "type": "object", "additionalProperties": { "type": "string" } }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "value"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "kind": { "type": "string" },
+        "value": { "type": "string" }
+      }
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "file", "width", "height", "size_bytes", "perceptual_hash", "revision", "milestone"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "file": { "type": "string", "pattern": "^snapshots/[^/]+\\.jpg$" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "size_bytes": { "type": "integer", "minimum": 1 },
+        "perceptual_hash": { "type": "string", "minLength": 1 },
+        "revision": { "type": "integer", "minimum": 0 },
+        "milestone": { "type": "boolean" }
+      }
+    },
+    "implementation_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision", "change_type", "changes", "code_impact", "semantic_impact", "milestone", "occurred_at"],
+      "properties": {
+        "revision": { "type": "integer", "minimum": 0 },
+        "change_type": { "type": "string" },
+        "changes": {
+          "type": "object",
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["from", "to"],
+                "properties": {
+                  "from": { "type": "string" },
+                  "to": { "type": "string" }
+                }
+              }
+            ]
+          }
+        },
+        "code_impact": { "type": "number", "minimum": 0, "maximum": 1 },
+        "semantic_impact": { "type": "number", "minimum": 0, "maximum": 1 },
+        "milestone": { "type": "boolean" },
+        "occurred_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "human_priority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "label", "note"],
+      "properties": {
+        "level": { "enum": ["important", "critical"] },
+        "label": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "activity", "centrality", "stability", "maturity", "matched_rules", "calculated_at", "algorithm_version"],
+      "properties": {
+        "state": { "type": "string" },
+        "activity": { "type": "number" },
+        "centrality": { "type": "number" },
+        "stability": { "type": "number" },
+        "maturity": { "type": "number" },
+        "matched_rules": { "type": "array", "items": { "type": "string" } },
+        "calculated_at": { "type": "string", "format": "date-time" },
+        "algorithm_version": { "type": "string" }
+      }
+    },
+    "change_heat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "percentile", "event_count", "explanation", "calculated_at"],
+      "properties": {
+        "score": { "type": "number" },
+        "percentile": { "type": "number" },
+        "event_count": { "type": "integer", "minimum": 0 },
+        "explanation": { "type": "string" },
+        "calculated_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "cluster": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "project_id", "name", "definition_ids", "primary_definition_id", "status", "created_at", "updated_at"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "project_id": { "type": "string", "pattern": "^project_[a-zA-Z0-9_-]+$" },
+        "name": { "type": "string" },
+        "definition_ids": { "type": "array", "minItems": 2, "items": { "type": "string", "pattern": "^def_[a-zA-Z0-9_-]+$" } },
+        "primary_definition_id": { "type": "string", "pattern": "^def_[a-zA-Z0-9_-]+$" },
+        "status": { "enum": ["pending", "approved", "adjusted", "rejected"] },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "agent_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["definition_id", "canonical_name", "current_symbol", "current_func", "code_locator", "visual_locator", "functional_locator", "relevant_relations"],
+      "properties": {
+        "definition_id": { "type": "string" },
+        "canonical_name": { "type": "string" },
+        "current_symbol": { "type": "string" },
+        "current_func": { "type": "string" },
+        "code_locator": { "$ref": "#/$defs/code_locator" },
+        "visual_locator": { "$ref": "#/$defs/visual_locator" },
+        "functional_locator": { "$ref": "#/$defs/functional_locator" },
+        "human_priority": { "oneOf": [{ "$ref": "#/$defs/human_priority" }, { "type": "null" }] },
+        "protection": { "oneOf": [{ "type": "object", "additionalProperties": { "type": "string" } }, { "type": "null" }] },
+        "relevant_relations": { "type": "array", "items": { "$ref": "#/$defs/relation" } }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.DS_Store
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Swift Package Manager
+.build/
+Packages/
+
+# Local development stores and exported user data
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.funcdictionary/
+
+
+# Local agent sessions, credentials and Python caches
+.zcode/
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision
+__pycache__/
+*.pyc
+*.xcresult/
+
+# Private local agent settings and development history
+.aws/
+.hermes/
+/Docs/ExecutionPlans/
+/Docs/ExecutionStatus.md
+/Docs/macOS-MVP.md
+/Docs/CLI-Agent-Integration.md
+/Docs/RequirementsTraceability.md
+/MVP_ACCEPTANCE_REPORT.md
+/funcDictionary_MVP_阶段执行文档.md
